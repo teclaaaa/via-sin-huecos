@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreteras Seguras</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #5C6BC0;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+        header nav a:hover {
+            background-color: #3949AB;
+        }
+        section {
+            padding: 120px 20px;
+        }
+        section:nth-of-type(odd) {
+            background-color: #E8EAF6;
+        }
+        section:nth-of-type(even) {
+            background-color: #FFFFFF;
+        }
+        h1, h2, h3 {
+            color: #3949AB;
+            text-align: center;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .highlight {
+            background-color: #C5CAE9;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .services div {
+            background-color: #7986CB;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        footer {
+            background-color: #3949AB;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Vías sin huecos</h1>
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#objetivo">Objetivo</a>
+            <a href="#servicios-beneficios">Servicios y Beneficios</a>
+            <a href="#quienes-somos">¿Quiénes somos?</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="fade-in">
+        <img src="https://www.wirtgen-group.com/media/01_wirtgen_group/01_bilder_1/02_anwendungen/strassenbau/wg_composing_synergies_mill-and-fill_web_00004_1680x945.jpg" alt="Reparación de carreteras" style="width: 100%; height: auto; max-height: 500px; object-fit: cover;">
+        <h2>La importancia de carreteras en buen estado</h2>
+        <p>Las carreteras son vitales para el desarrollo económico y social de México. Mantenerlas en óptimas condiciones garantiza seguridad y eficiencia en el transporte.</p>
+        <div style="text-align: center;">
+            <button onclick="document.getElementById('objetivo').scrollIntoView();">Aprender</button>
+        </div>
+    </section>
+
+    <section id="objetivo" class="fade-in">
+        <h2>Compromiso con la seguridad vial</h2>
+        <p>Nuestro objetivo es garantizar la seguridad en los caminos, ofreciendo soluciones efectivas para prevenir accidentes. Creemos en un futuro donde cada viaje sea seguro y confiable, gracias a nuestro enfoque en responsabilidad y compromiso.</p>
+        <img src="https://img.freepik.com/fotos-premium/trabajadores-construccion-instalando-senales-trafico-lo-largo-carretera-conos-trafico-infraestructura_1166177-14334.jpg" alt="Trabajadores de la construcción" style="width: 100%; height: auto; max-height: 500px; object-fit: cover;">
+    </section>
+
+    <section id="servicios-beneficios" class="fade-in">
+        <h2>Soluciones efectivas para baches en carreteras</h2>
+        <p>Nuestros servicios se enfocan en la inspección precisa de baches, garantizando una identificación rápida de problemas. Ofrecemos reparaciones veloces para minimizar el impacto en la circulación.</p>
+        <div class="services">
+            <div>
+                <h3>Inspección de baches con tecnología avanzada</h3>
+                <p>Utilizamos herramientas de última generación para detectar baches.</p>
+            </div>
+            <div>
+                <h3>Reparación rápida para una circulación segura</h3>
+                <p>Nuestro equipo actúa de inmediato para reparar los baches.</p>
+            </div>
+            <div>
+                <h3>Mantenimiento preventivo para prolongar la vida útil</h3>
+                <p>Ofrecemos planes de mantenimiento para evitar futuros baches.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="fade-in">
+        <h2>Descubre los beneficios de nuestros servicios</h2>
+        <p>Contratar nuestros servicios garantiza un avance significativo en la seguridad de los caminos. Además, contribuimos a la reducción de costos a largo plazo y mejora la calidad de vida de los viajeros.</p>
+        <img src="https://yucatan.quadratin.com.mx/www/wp-content/uploads/2020/08/M%C3%89RIDA-PROGRESO-1160x700.jpg" alt="Progreso en carreteras" style="width: 100%; height: auto; max-height: 500px; object-fit: cover;">
+    </section>
+
+    <section id="quienes-somos" class="fade-in">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos estudiantes de segundo año de preparatoria en la UVM, comprometidos con mejorar la calidad de vida en nuestro municipio. Nuestra misión es garantizar la seguridad en las carreteras, ofreciendo soluciones efectivas para prevenir accidentes. Creemos en un futuro donde cada viaje sea seguro y confiable, guiados por nuestros valores de responsabilidad y compromiso. A través de nuestro proyecto de reparación de baches con llantas recicladas, buscamos soluciones innovadoras que beneficien a nuestra comunidad.</p>
+        <img src="https://media.istockphoto.com/id/501710845/es/foto/grupo-de-gente-que-sujeta-national-flags-de-m%C3%A9xico.jpg" alt="Siluetas con banderas de México" style="width: 100%; height: auto; max-height: 500px; object-fit: cover;">
+    </section>
+
+    <section id="testimonios" class="fade-in">
+        <h2>Testimonios destacados</h2>
+        <p>"Gracias a los servicios de esta empresa, las carreteras en nuestra región han mejorado notablemente. Ahora, viajar es mucho más seguro y agradable." - Laura Pérez</p>
+        <div>
+            <input type="email" placeholder="Introduce tu email">
+            <button>Sign up</button>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p>Contacto rápido | Soporte técnico | Programa preventivo | Blog oficial | Redes sociales</p>
+        <p>Términos de uso | Política de privacidad</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-in');
+            const options = {
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
